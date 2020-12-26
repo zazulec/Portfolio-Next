@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.custBgGrey {
-  background-color: #84909c;
+.custBg {
+  background-color: #050505;
 }
-.custBlue {
-  color: #73e4e5;
+.custColorText {
+  color: #eeeeee;
 }
-.custBlack {
+.custColorBlack {
   color: #050505;
 }
-.custYellow {
-  color: #e2cc52;
+.custColorYellow {
+  color: #fcd44c;
 }
