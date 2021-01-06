@@ -1,6 +1,101 @@
 @import "../styles/styles";
 
 .home {
+  width: 100%;
   min-height: 100vh;
   background-color: $backGroundColor;
+}
+
+.wrapper {
+  width: 100vw;
+  padding-top: 20px;
+  .hero {
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    & p {
+      color: $primary;
+      margin-top: 50px;
+      & span {
+        line-height: 80%;
+        font-size: 55px;
+        line-height: 2;
+      }
+    }
+    .personalInfo {
+      display: flex;
+      flex-direction: column;
+    }
+    .socials {
+      display: flex;
+      justify-content: flex-start;
+      width: max-content;
+      font-size: 30px;
+      .linkedin {
+        color: $primary;
+        opacity: 0.4;
+        cursor: pointer;
+        transition: all 0.5s;
+        margin: 10px 10px 10px 0px;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      .gitlab {
+        @extend .linkedin;
+      }
+    }
+  }
+  .image {
+    -webkit-animation: appear 1s;
+    animation: appear 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes appear {
+    0% {
+      // left: 500px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      // left: 16px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes appear {
+    0% {
+      left: 500px;
+      opacity: 0;
+    }
+    100% {
+      left: 16px;
+      opacity: 1;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90vw;
+    height: 300px;
+    background-color: $secondary;
+    border-radius: 10px 10px 0 0;
+    & h1 {
+      color: $tertiary;
+      font-size: 35px;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+    & p {
+      text-indent: 20px;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
 }
