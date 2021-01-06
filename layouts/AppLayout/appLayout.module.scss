@@ -3,7 +3,6 @@
 .wrapper {
   flex-direction: column;
   padding-top: 5px;
-  width: 50%;
 
   .navLinks {
     display: flex;
@@ -11,6 +10,8 @@
     padding-top: 5px;
     padding-right: 10px;
     list-style-type: none;
+    margin: 5px auto;
+    width: 90%;
     @media all and (min-width: $x-small) {
       flex-direction: row;
     }
